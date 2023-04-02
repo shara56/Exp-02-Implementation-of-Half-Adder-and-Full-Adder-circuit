@@ -35,20 +35,77 @@ Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
-Program:
-/*
+# Program:
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
+
+Developed by: SHARANGINI T K
+
+RegisterNumber:  212222230143
+```
+Half adder program:
+module fulladd (a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum = (a^b);
+assign carry = (a&b);
+endmodule
+
+Full adder program:
+
+module fulladd (a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum = (a^b^c);
+assign carry = ((a&b)|(a^b)&c);
+endmodule
+```
 
 ### Output:
-### RTL
-### TIMING DIAGRAM
+
+HALF-ADDER:-
+
+![image](https://user-images.githubusercontent.com/113497104/229346522-2f1ef177-709f-419a-9b41-f845ce48278a.png)
+
+FULL-ADDER:-
+
+![image](https://user-images.githubusercontent.com/113497104/229346974-f3d2fc44-ad78-4394-94d5-f11a6feec58d.png)
+
+# RTL
+HALF-ADDER:-
+
+![image](https://user-images.githubusercontent.com/113497104/229346690-cb65b1cd-d0ec-41fe-9e3e-6db8a8119678.png)
+
+FULL-ADDER:-
+
+![image](https://user-images.githubusercontent.com/113497104/229346725-a1905c82-f5af-468e-a8dd-688080972588.png)
+
+# TIMING DIAGRAM:
+HALF-ADDER:-
+
+![image](https://user-images.githubusercontent.com/113497104/229346774-66c12b94-ff2f-427d-903f-e3e0a9f2000a.png)
+
+FULL-ADDER:-
+
+![image](https://user-images.githubusercontent.com/113497104/229346817-d5f90ccc-00fb-4c95-9260-a03859eda548.png)
+
+# TRUTH TABLE:
+HALF-ADDER:-
+
+![image](https://user-images.githubusercontent.com/113497104/229346884-35e719e0-28b2-4098-b3e5-e3f05cf6a0f6.png)
+
+FULL-ADDER:-
+
+![image](https://user-images.githubusercontent.com/113497104/229346922-29f46bd8-207d-47ec-a3b0-4ab55e6259bf.png)
+
+# Result:
+Thus the Implementation of Half Adder and Full Adder circuit are studied and the truth table for different logic gates are verified.
 
 
-### TRUTH TABLE 
 
-### Result:
+
+
+
+
+
+
+
